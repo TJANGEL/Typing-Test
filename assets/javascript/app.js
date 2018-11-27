@@ -1,7 +1,18 @@
 window.addEventListener('load', init);
 
 // Global Variables
-let time = 5;
+
+// Levels
+const levels = {
+    easy: 6,
+    medium: 4,
+    hard: 2
+}
+
+// To change level
+const currentLevel = levels.easy;
+
+let time = currentLevel;
 let score = 0;
 let playing;
 
@@ -20,6 +31,9 @@ const words = [
 
 // Initialize game
 function init() {
+    // Seconds in ui reflects current level
+    seconds.innerHTML = currentLevel;
+
     // Load word from array
     showWord(words);
 
@@ -36,7 +50,7 @@ function init() {
 function startGame() {
     if (gameWords()) {
         playing = true;
-        time = 6;
+        time = currentLevel + 1;
         showWord(words);
         wordInput.value = '';
         score++;
