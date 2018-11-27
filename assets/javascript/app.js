@@ -26,7 +26,47 @@ const seconds = document.querySelector('#seconds');
 
 // possible words to type
 const words = [
-    // add words
+    'dog',
+    'cat',
+    'apple',
+    'grapefruit',
+    'house',
+    'empty',
+    'intro',
+    'cards',
+    'review',
+    'discord',
+    'monopoly',
+    'dodge',
+    'elephant',
+    'foreign',
+    'development',
+    'belly',
+    'care',
+    'heavy',
+    'requirement',
+    'fourteen',
+    'believe',
+    'proven',
+    'yellow',
+    'icecream',
+    'breath',
+    'entire',
+    'beat',
+    'hungry',
+    'beer',
+    'soda',
+    'fern',
+    'trash',
+    'envelope',
+    'bootstrap',
+    'foundation',
+    'possibilities',
+    'sneakers',
+    'fountain',
+    'glasses',
+    'horrendous',
+    'quality'
 ]
 
 // Initialize game
