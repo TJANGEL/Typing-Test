@@ -35,8 +35,18 @@ function init() {
 // Start Game
 function startGame() {
     if (gameWords()) {
-        
+        playing = true;
+        time = 6;
+        showWord(words);
+        wordInput.value = '';
+        score++;
     }
+
+    if (score === -1) {
+        scoreDisplay.innerHTML = 0;
+    } else {
+        scoreDisplay.innerHTML = score;
+    };
 }
 
 // Match currentWord to wordInput
@@ -71,6 +81,8 @@ function countdown() {
 // Check game status
 function checkStatus() {
     if (!playing && time === 0) {
+        // reset game and set score to 0
         message.innerHTML = 'Game Over!!';
+        score = -1;
     }
 }
